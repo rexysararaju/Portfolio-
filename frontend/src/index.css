@@ -1,0 +1,131 @@
+/* ---------------------------------------------
+   GLOBAL RESET
+---------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #f4f7f5;
+  color: #1a1a1a;
+}
+
+/* Ensure content is not behind navbar */
+.page-container {
+  margin-top: 80px;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+}
+
+/* ---------------------------------------------
+   GLOBAL ELEMENTS
+---------------------------------------------- */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #1a3c34; /* Deep green */
+}
+
+p {
+  line-height: 1.7;
+  color: #444;
+}
+
+a {
+  color: #e27c3e; /* Orange */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------
+   BUTTONS
+---------------------------------------------- */
+.btn-primary {
+  padding: 12px 20px;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #245741;
+}
+
+.btn-secondary {
+  padding: 8px 14px;
+  background: #5a6c75;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-danger {
+  padding: 8px 14px;
+  background: #c0392b;
+  color: white;
+  border-radius: 6px;
+}
+
+/* ---------------------------------------------
+   CARD COMPONENTS
+---------------------------------------------- */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------
+   GRID LAYOUTS
+---------------------------------------------- */
+.edu-grid,
+.project-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .edu-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------------------------------------------
+   FORM INPUTS
+---------------------------------------------- */
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+.status-msg {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2d6a4f;
+}
