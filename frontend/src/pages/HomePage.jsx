@@ -10,6 +10,8 @@ const HomePage = () => {
     <div className="page-container" style={styles.wrapper}>
       <div style={styles.heroCard}>
         <h1 style={styles.title}>Welcome to My Portfolio</h1>
+        <p style={{ color: "purple" }}>This is my CI/CD update test.</p>
+
 
         <p style={styles.subtitle}>
           Hi, I'm <span style={{ fontWeight: "bold", color: "#2d6a4f" }}>Rexy</span>,
