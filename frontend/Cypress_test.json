@@ -1,0 +1,219 @@
+{
+    "title": "cypress_test2",
+    "selectorAttribute": "data-test",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1680,
+            "height": 505,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "http://localhost:5173/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "http://localhost:5173/",
+                    "title": "frontend"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(1) > a:nth-of-type(2)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/nav/div[1]/a[2]"
+                ],
+                [
+                    "pierce/div:nth-of-type(1) > a:nth-of-type(2)"
+                ],
+                [
+                    "aria/About"
+                ]
+            ],
+            "offsetY": 10.25,
+            "offsetX": 19.0078125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(3)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/nav/div[1]/a[3]"
+                ],
+                [
+                    "pierce/a:nth-of-type(3)"
+                ],
+                [
+                    "aria/Education"
+                ],
+                [
+                    "text/Education"
+                ]
+            ],
+            "offsetY": 7.25,
+            "offsetX": 26.1953125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(4)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/nav/div[1]/a[4]"
+                ],
+                [
+                    "pierce/a:nth-of-type(4)"
+                ],
+                [
+                    "aria/Projects"
+                ],
+                [
+                    "text/Projects"
+                ]
+            ],
+            "offsetY": 6.25,
+            "offsetX": 37.03125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "a:nth-of-type(5)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/nav/div[1]/a[5]"
+                ],
+                [
+                    "pierce/a:nth-of-type(5)"
+                ],
+                [
+                    "aria/Contact"
+                ],
+                [
+                    "text/Contact"
+                ]
+            ],
+            "offsetY": 4.25,
+            "offsetX": 24.234375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(2) > a:nth-of-type(1)"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/nav/div[2]/a[1]"
+                ],
+                [
+                    "pierce/div:nth-of-type(2) > a:nth-of-type(1)"
+                ],
+                [
+                    "aria/Sign In"
+                ],
+                [
+                    "text/Sign In"
+                ]
+            ],
+            "offsetY": 25.25,
+            "offsetX": 28.25
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "input[type='email']"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/form/input[1]"
+                ],
+                [
+                    "pierce/input[type='email']"
+                ],
+                [
+                    "aria/Email"
+                ]
+            ],
+            "offsetY": 34,
+            "offsetX": 87
+        },
+        {
+            "type": "change",
+            "value": "admin@test.com",
+            "selectors": [
+                [
+                    "input[type='email']"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/form/input[1]"
+                ],
+                [
+                    "pierce/input[type='email']"
+                ],
+                [
+                    "aria/Email"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "value": "123456",
+            "selectors": [
+                [
+                    "input[type='password']"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/form/input[2]"
+                ],
+                [
+                    "pierce/input[type='password']"
+                ],
+                [
+                    "aria/Password"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "button"
+                ],
+                [
+                    "xpath///*[@id=\"root\"]/div/form/button"
+                ],
+                [
+                    "pierce/button"
+                ],
+                [
+                    "aria/Login"
+                ],
+                [
+                    "text/Login"
+                ]
+            ],
+            "offsetY": 28,
+            "offsetX": 127
+        }
+    ]
+}
